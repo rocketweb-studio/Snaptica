@@ -1,7 +1,10 @@
+'use client' //todo delete
 import Image from "next/image";
 import styles from "./page.module.css";
+import {useState} from "react";
 
 export default function Home() {
+  const [images, setImages] = useState([]);// todo delete (this line for test)
   return (
     <div className={styles.page}>
       <main className={styles.main}>
